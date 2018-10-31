@@ -1,0 +1,194 @@
+//
+// Utility classes
+// --------------------------------------------------
+@import "variables";
+
+// Floats
+// -------------------------
+
+.ellipsis{
+    @extend %ellipsis;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+.center-block {
+    @include center-block;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+// Alignment
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+    position: fixed;
+}
+
+.vertical-middle {
+    vertical-align: middle;
+}
+.inline-block{
+    display: inline-block;
+}
+.pull-height{
+    height: 100%;
+}
+
+
+// btn
+.btn {
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+.btn-primary {
+    background-color: #3c8dbc;
+    border-color: #367fa9;
+}
+
+// message
+.el-message {
+    top: 30px!important;
+}
+
+// date-picker
+.el-time-spinner__item {
+    line-height: 15px!important;
+}
+
+// input
+.el-input__inner {
+    height: 30px!important;
+}
+
+// table
+.el-table .cell,
+.el-table th > div{
+    padding: 8px!important;
+    line-height: 1.42857143!important;
+}
+.table-row{
+    cursor: pointer;
+}
+
+// wrapper
+.wrapper{
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+}
+
+// 右侧菜单
+.right-btn-aside{
+    position: relative;
+    .right-menu-side{
+        position: absolute;
+        top: 0;
+        left: 4px;
+        right: 16px;
+    }
+}
+
+// 分页
+.el-pagination{
+    padding: 20px 0 !important;
+    .el-pagination__total{
+        margin: 0;
+        margin-right: 10px;
+    }
+    .el-pagination__sizes{
+        margin-right: 30px;
+    }
+    .el-pagination__jump{
+        float: right;
+    }
+    .el-pagination__editor{
+        width: 50px;
+    }
+}
+
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    box-shadow: inset006pxrgba(0,0,0,.3);
+    border-radius: 10px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0,0,0,.1);
+    box-shadow: inset006pxrgba(0,0,0,.5);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(0,0,0,.2);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(61,31,40,.4);
+}
+
+//表格
+.el-table__header,
+.el-table__body{
+    width: 100%!important;
+}
